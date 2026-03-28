@@ -1,3 +1,4 @@
+## AND Bitwise operations returns matching bitwise values.
 can_create_guild = 0b1000
 can_review_guild = 0b0100
 can_delete_guild = 0b0010
@@ -21,4 +22,10 @@ def get_delete_bits(user_permissions):
 
 def get_edit_bits(user_permissions):
     permission_check = can_edit_guild & user_permissions
+    return permission_check
+
+## OR Bitwise operations (Combines the bitwise values)
+
+def calculate_guild_perms(glorfindel, galadriel, elendil, elrond):
+    permission_check = glorfindel | galadriel | elendil | elrond
     return permission_check
