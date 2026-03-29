@@ -33,3 +33,20 @@ def regenerate(current_health, max_health, enemy_distance):
         current_health += 1
         enemy_distance -= 2
     return current_health
+
+
+## Loop that uses "continue" arugments which is used to prevent processing un-necessary steps.
+def award_enchantments(start, end, step):
+    counter = 0
+    for quest_number in range(start, end, step):
+        enchantment_strength = quest_number * 5
+        counter += 1
+        
+        if counter < 3: 
+            continue
+        
+        elif counter == 3:
+            counter = 0 
+            print(
+            f"Enchantment of strength {enchantment_strength} awarded for completing {quest_number} quests!"
+        )
