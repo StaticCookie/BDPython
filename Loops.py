@@ -27,4 +27,9 @@ def sum_of_odd_numbers(end):
         total += i
     return total
 
-## While loop
+## While loop that runs 'While' 2 conditions exist (seperated by 'and')
+def regenerate(current_health, max_health, enemy_distance):
+    while current_health < max_health and enemy_distance > 3:
+        current_health += 1
+        enemy_distance -= 2
+    return current_health
