@@ -50,3 +50,17 @@ def award_enchantments(start, end, step):
             print(
             f"Enchantment of strength {enchantment_strength} awarded for completing {quest_number} quests!"
         )
+
+## loop that adds 5 XP per level & keeps tally per level gained
+def calculate_experience_points(level):
+    counter = 0
+    xp_so_far = 0
+    xp_next_level = 0
+    
+    while level > counter:
+        counter += 1
+        
+        xp_so_far += xp_next_level
+        xp_next_level = counter * 5
+
+    return xp_so_far
