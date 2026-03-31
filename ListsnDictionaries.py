@@ -10,3 +10,30 @@ def smelt_ore(inventory):
     if inventory[1] == 'Iron Ore':
         inventory[1] = 'Iron Bar'
     return inventory
+
+## Adds id's based on the number
+def generate_user_list(num_of_users):
+    player_ids = []
+
+    for i in range(0, num_of_users):
+        player_ids.append(i)
+        i+=1
+
+    return player_ids
+
+## Removes the last item from the list every loop
+    for i in range(0, len(inventory)):
+        # ?
+        item = inventory.pop()
+
+## Adds counter for each item in list, this can be used to show duplicates
+
+    for i in range(0, len(items)):
+
+        
+        if items[i] == "Potion":
+            potion_count += 1
+        elif items[i] == "Bread":
+            bread_count += 1
+        elif items[i] == "Shortsword":
+            shortsword_count += 1
