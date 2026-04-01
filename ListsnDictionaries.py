@@ -39,7 +39,6 @@ def generate_user_list(num_of_users):
 
 ## Removes the last item from the list every loop
     for i in range(0, len(inventory)):
-        # ?
         item = inventory.pop()
 
 ## Adds counter for each item in list, this can be used to show duplicates
