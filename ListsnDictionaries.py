@@ -48,3 +48,9 @@ def find_max(nums):
         if nums >= max_so_far: 
             max_so_far = nums
     return max_so_far
+
+
+## adds numbers from list to another list if they are odd. this uses the Modulo "%", can be re-written to return whether a number is odd or even.
+    for i in range(0, num):
+        if i % 2 == 1:
+            odd_numbers.append(i)
