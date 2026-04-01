@@ -1,6 +1,22 @@
 ## exmaple of proper List syntax
 best_languages = ["JavaScript", "Go", "Rust", "Python", "C"]
 
+# Syntax of standard "Slicing": 
+    # my_list[ start : stop : step ]
+
+# Syntax of Omitting "Step Slicng": 
+    # numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    # numbers[:3] !! Gives [0, 1, 2]
+    # numbers[3:] !! Gives [3, 4, 5, 6, 7, 8, 9]
+
+# Syntax of Step selection
+    # numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    # numbers[::2] !! Gives [0, 2, 4, 6, 8]
+
+# Synatax of Reverse Slicing
+    # numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    # numbers[-3:] !! Gives [7, 8, 9]
+
 ## length function that shows the highest list item record
 def get_last_index(inventory):
     return len(inventory) - 1
