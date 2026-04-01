@@ -75,3 +75,8 @@ def find_max(nums):
 total = [1, 2, 3] + [4, 5, 6]
 # OR 
 combined_list = list_1 + list_2 + list_3
+
+
+## List Operations - Contains
+    return weapon in top_weapons #Returns True if "weapon" is within "top_weapons" (False if not True)
+    return weapon not in top_weapons #Returns False  if "weapon" is within "top_weapons" (True if not False)
