@@ -36,7 +36,6 @@ def smelt_ore(inventory):
 ## Adds id's based on the number
 def generate_user_list(num_of_users):
     player_ids = []
-
     for i in range(0, num_of_users):
         player_ids.append(i)
     return player_ids
