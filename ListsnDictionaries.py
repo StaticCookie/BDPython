@@ -17,6 +17,12 @@ best_languages = ["JavaScript", "Go", "Rust", "Python", "C"]
     numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
     numbers[-3:] # Gives [7, 8, 9]
 
+# List Deletion (Use Del) 
+def trim_strongholds(strongholds):
+    del strongholds[0] # Deletes the first item from the list
+    del strongholds[-2:] # Deletes the last 2 items from the list
+
+
 ## length function that shows the highest list item record
 def get_last_index(inventory):
     return len(inventory) - 1
