@@ -1,3 +1,7 @@
+ for i in range(len(items),0,-1):
+#i = Incriment
+#range = range(start, stop, step)
+
 ## Counts by 1 to 99
 def print_numbers():
     for i in range (0,100):
