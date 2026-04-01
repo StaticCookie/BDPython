@@ -37,3 +37,14 @@ def generate_user_list(num_of_users):
             bread_count += 1
         elif items[i] == "Shortsword":
             shortsword_count += 1
+
+## adds highest item on list to Max_so_far
+
+def find_max(nums):
+    max_so_far = float("-inf")
+    pass
+
+    for nums in nums:
+        if nums >= max_so_far: 
+            max_so_far = nums
+    return max_so_far
