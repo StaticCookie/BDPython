@@ -39,8 +39,6 @@ def generate_user_list(num_of_users):
 
     for i in range(0, num_of_users):
         player_ids.append(i)
-        i+=1
-
     return player_ids
 
 ## Removes the last item from the list every loop
