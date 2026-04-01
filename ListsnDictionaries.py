@@ -90,3 +90,9 @@ combined_list = list_1 + list_2 + list_3
         ("Gimli",389,False),
         ("Aragorn",87,False)
     ]
+
+## Reverse List
+    new_list = []
+    for i in range(len(items) - 1, -1, -1):
+        new_list.append(items[i])
+    return new_list
