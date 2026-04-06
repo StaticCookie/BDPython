@@ -115,3 +115,22 @@ def filter_messages(messages):
         dang_counts.append(num_dangs)
 
     return filtered_messages, dang_counts
+
+## checks if item from recipe is in inventory, returns the % of missing items & returns a list of missing items
+def check_ingredient_match(recipe, inventory):
+    missing_item = []
+    acquired_item = []
+
+    for item in recipe:
+        if item not in inventory:
+            missing_item.append(item)  
+        else:
+            acquired_item.append(item)
+            
+            
+    acquired_length = len(acquired_item)
+    needed_length = len(recipe)
+    
+            
+    missing_percentage = (acquired_length / needed_length) * 100
+    return missing_percentage, missing_item
