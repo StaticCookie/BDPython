@@ -68,3 +68,22 @@ def calculate_experience_points(level):
         xp_next_level = counter * 5
 
     return xp_so_far
+
+## Rotate player list
+def rotate_turn_order(players):
+
+    player_len = len(players) # only required for checking if input players are blank / empty.
+    new_order = players
+
+
+    if player_len != 0: #checks if there is a list
+        rotated_player = players[0]
+        new_order.pop(0)
+        new_order.append(rotated_player)
+    else:
+        new_order = [] # returns null if no input
+        
+    return new_order
+    
+    
+    
