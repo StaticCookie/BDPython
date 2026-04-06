@@ -96,3 +96,22 @@ combined_list = list_1 + list_2 + list_3
     for i in range(len(items) - 1, -1, -1):
         new_list.append(items[i])
     return new_list
+
+# Filter out censored word, in this case "Dang"
+def filter_messages(messages):
+    filtered_messages = []
+    dang_counts = []
+    for message in messages:
+        words = message.split()
+        good_words = []
+        dangs = []
+        for word in words:
+            if word == "dang":
+                dangs.append(word)
+            else:
+                good_words.append(word)
+        filtered_messages.append(" ".join(good_words))
+        num_dangs = len(dangs)
+        dang_counts.append(num_dangs)
+
+    return filtered_messages, dang_counts
