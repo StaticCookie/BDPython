@@ -26,3 +26,17 @@ def count_enemies(enemy_names):
         else: 
             enemies_dict[enemy_name] += 1
     return enemies_dict
+#----------------------------------------------------------------------------#
+# dicationary process that returns the highest score
+#----------------------------------------------------------------------------#
+def get_top_scorer(scores):
+    top_name = None
+    top_score = None
+
+    for name in scores:
+        score = scores[name]
+        if top_score is None or score > top_score:
+            top_name = name
+            top_score = score
+
+    return top_name
