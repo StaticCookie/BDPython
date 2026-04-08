@@ -116,7 +116,9 @@ def filter_messages(messages):
 
     return filtered_messages, dang_counts
 
+#----------------------------------------------------------------------------#
 ## checks if item from recipe is in inventory, returns the % of missing items & returns a list of missing items
+#----------------------------------------------------------------------------#
 def check_ingredient_match(recipe, inventory):
     missing_item = []
     acquired_item = []
@@ -131,7 +133,11 @@ def check_ingredient_match(recipe, inventory):
     acquired_length = len(acquired_item)
     needed_length = len(recipe)
 
+    missing_percentage = (acquired_length / needed_length) * 100
+    return missing_percentage, missing_item
+#----------------------------------------------------------------------------#
 ## adds item to unique list & unique set
+#----------------------------------------------------------------------------#
     def remove_duplicates(spells):
     used_potion_spells = set() 
     unique_spells = []
@@ -142,8 +148,34 @@ def check_ingredient_match(recipe, inventory):
             used_potion_spells.add(i)
     return(unique_spells)
             
+#----------------------------------------------------------------------------#
+#Count Vowels used & return vowels used
+#----------------------------------------------------------------------------#
+    def count_vowels(text):
+    counter = 0
+    vowels = set()
+    used_vowels = set()
+    
+    vowels = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'}
 
     
-            
-    missing_percentage = (acquired_length / needed_length) * 100
-    return missing_percentage, missing_item
+    for i in text:
+        if i in vowels:
+            counter += 1
+            used_vowels.add(i)
+    
+    return counter, used_vowels
+#----------------------------------------------------------------------------#
+#removes ID's listed in both the first and second Ids
+#----------------------------------------------------------------------------#
+def find_missing_ids(first_ids, second_ids):
+    first_ids = set(first_ids)
+    second_ids = set(second_ids)
+    third_ids = set()
+
+    for i in first_ids:
+        if i not in second_ids:
+            third_ids.add(i)
+
+    return third_ids
+
