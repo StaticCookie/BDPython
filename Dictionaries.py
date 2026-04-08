@@ -40,3 +40,22 @@ def get_top_scorer(scores):
             top_score = score
 
     return top_name
+
+#----------------------------------------------------------------------------#
+# dicationary process that returns the lowest distance & includes clause for no inputs.
+#----------------------------------------------------------------------------#
+def get_most_common_enemy(enemies_dict):
+    
+    lowest_distance = None
+
+    if len(enemies_dict) == 0:
+        return lowest_distance
+
+    else:
+        for name in enemies_dict:
+            distance = enemies_dict[name]
+            if lowest_distance is None or distance > lowest_distance:
+                closest_enemy = name
+                lowest_distance = distance
+
+    return closest_enemy
