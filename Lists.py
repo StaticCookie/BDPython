@@ -130,6 +130,19 @@ def check_ingredient_match(recipe, inventory):
             
     acquired_length = len(acquired_item)
     needed_length = len(recipe)
+
+## adds item to unique list & unique set
+    def remove_duplicates(spells):
+    used_potion_spells = set() 
+    unique_spells = []
+
+    for i in spells: 
+        if i not in used_potion_spells:
+            unique_spells.append(i)
+            used_potion_spells.add(i)
+    return(unique_spells)
+            
+
     
             
     missing_percentage = (acquired_length / needed_length) * 100
