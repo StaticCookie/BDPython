@@ -59,3 +59,15 @@ def get_most_common_enemy(enemies_dict):
                 lowest_distance = distance
 
     return closest_enemy
+    
+#----------------------------------------------------------------------------#
+# dicationary updates count per item in dictionary, if its not already in inventory it adds 1 to inventory
+#----------------------------------------------------------------------------#
+def build_gem_inventory(picked_up):
+    inventory = {}
+    for gem in picked_up:
+        if gem in inventory:
+            inventory[gem] += 1
+        else:
+            inventory[gem] = 1
+    return inventory
