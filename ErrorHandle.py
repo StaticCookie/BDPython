@@ -1,3 +1,5 @@
+## Error documentation for Py: https://docs.python.org/3/library/exceptions.html
+
 #----------------------------------------------------------------------------#
 # Calls function and checks for varios errors 
   # Index Error returns: Index is too high
