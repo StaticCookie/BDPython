@@ -84,6 +84,19 @@ def rotate_turn_order(players):
         new_order = [] # returns null if no input
         
     return new_order
-    
+
+
+#### Only returns integers
+def remove_nonints(nums):
+    updated_list = []
+    for i in nums:
+        if type(i) == int:
+            updated_list.append(i)
+        if type(i) == str: 
+            continue
+        if type(i) == float:
+            continue
+    return updated_list
+
     
     
