@@ -24,3 +24,12 @@ def get_player_record(player_id):
         {"name": "Saruman", "level": 4000},
     ]
     return players[player_id]
+#----------------------------------------------------------------------------#
+# Raises error handling when 1 variable that is expected to be larger is not.
+# Otherwise if no error, function returns the difference.
+#----------------------------------------------------------------------------#
+
+def purchase_item(price, gold_available):
+    if gold_available < price:
+        raise Exception("not enough gold")
+    return gold_available - price
