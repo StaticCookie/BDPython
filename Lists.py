@@ -179,3 +179,16 @@ def find_missing_ids(first_ids, second_ids):
 
     return third_ids
 
+#----------------------------------------------------------------------------#
+# combines the square from a list.
+#----------------------------------------------------------------------------#
+def area_sum(rectangles):
+    square_response = 0
+    for rect in rectangles:
+        h = rect["height"]
+        w = rect["width"]
+        square = h * w
+        square_response += square
+    return square_response
+
+
