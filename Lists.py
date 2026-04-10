@@ -191,4 +191,15 @@ def area_sum(rectangles):
         square_response += square
     return square_response
 
+#----------------------------------------------------------------------------#
+# Concat's strings within list.
+#----------------------------------------------------------------------------#
+def join_strings(strings):
+    string_list = ""
+    for i in strings:
+        if len(string_list) == 0:
+            string_list = i 
+        else:
+            string_list = string_list +","+ i 
+    return string_list
 
